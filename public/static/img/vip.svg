@@ -1,0 +1,23 @@
+<svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_2">
+   <stop offset="1" stop-color="#fff"/>
+   <stop offset="1" stop-color="#000000"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="url(#svg_2)" id="canvas_background" height="152" width="152" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_3" height="62.856976" width="140.40779" y="40.350857" x="4.796104" stroke-width="1.5" stroke="#000" fill="#000000"/>
+  <path stroke="#000" transform="rotate(-180 74.96469116210939,124.58781433105469) " id="svg_4" d="m6.801596,144.791849l68.163092,-40.408064l68.163092,40.408064l-136.326183,0z" stroke-width="1.5" fill="#000000"/>
+  <path stroke="#000" id="svg_5" d="m5.587326,39.358187l25.943806,-29.387674l86.479358,0l25.943797,29.387674l-138.366961,0z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#000000"/>
+  <text style="cursor: move;" stroke="#000" transform="matrix(4.304429054260254,0,0,2.9984333515167236,-123.70956271886826,-83.8717497214675) " xml:space="preserve" text-anchor="start" font-family="'Trebuchet MS', Gadget, sans-serif" font-size="32" id="svg_6" y="61.708783" x="34.811616" stroke-opacity="null" stroke-width="0" fill="#eaea2a">M</text>
+ </g>
+</svg>

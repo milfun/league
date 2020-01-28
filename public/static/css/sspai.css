@@ -1,0 +1,285 @@
+/* Sspai Web Theme A theme to [sspai](ssp.ai) default theme. Developed by Codegass(wchweichenhao@gmial.com) & Yves(yves@sspai.com) Download Cuto on the App Store and Google Play! */
+
+body {
+	font-size: 15px;
+	color: #333;
+	background: #fff;
+	font-family: Helvetica, Arial, "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", "tohoma,sans-serif";
+	margin: 0;
+}
+article{
+	display: block;
+	width: 100%;
+}
+article h1 {
+	font-size: 2.2em;
+	font-weight: 700;
+	line-height: 1.1;
+	padding-top: 16px;
+	margin-bottom: 4px;
+}
+article h2,article  h3,article  h4,article  h5,article  h6 {
+	line-height: 1.5em;
+	margin-top: 2.2em;
+	margin-bottom: 4px;
+}
+article h2 {
+	font-size: 1.4em;
+	margin: 40px 10px 20px 0;
+	font-weight: 700;
+	line-height: 1.4;
+}
+article h3 {
+	font-weight: 700;
+	font-size: 1.2em;
+	line-height: 1.4;
+	margin: 10px 0 5px;
+	padding-top: 10px;
+}
+article h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	line-height: 1.4;
+	margin: 10px 0 5px;
+	padding-top: 10px
+}
+article h5, h6 {
+	font-size: .9em;
+}
+article h5 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+article h6 {
+	font-weight: normal;
+	color: #AAA;
+}
+article img {
+	border-radius: 5px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	height: auto;
+}
+article dl,article  ol,article  ul {
+	margin-top: 12px;
+	margin-bottom: 20px;
+	padding-left: 5%;
+	line-height: 1.8;
+}
+article p {
+	margin: 0 0 20px;
+	padding: 0;
+	line-height: 1.8;
+	text-align: left;
+}
+article a {
+	padding: 0 10px;
+	color: #a88e00;
+	text-decoration: none;
+}
+article a:hover {
+	color: #FFE971;
+	text-decoration: underline;
+}
+article a:focus {
+	outline-offset: -2px;
+}
+article blockquote {
+	font-size: 1em;
+	font-style: normal;
+	padding: 10px 38px;
+	margin: 0 0 15px;
+	position: relative;
+	line-height: 2.0;
+	text-indent: 0;
+	border: none;
+	color: #888;
+	background: #f9f9f9;
+	border-left: 6px solid #E0E0E0;
+}
+article strong,article  dfn {
+	font-weight: 700;
+}
+article em,article  dfn {
+	font-style: italic;
+	font-weight: 400;
+}
+article del {
+	text-decoration: line-through;
+}
+/*code {font-size:90%;}*/
+
+/*pre {text-align:left; overflow-x: scroll; color: #257fa0; background: #f6f6f6; padding: 10pt 15pt; border-radius: 3px; border: solid 1px #e2e2e2;}*/
+
+pre {
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857;
+	word-break: break-all;
+	word-wrap: break-word;
+	border-radius: 4px;
+	white-space: pre-wrap;
+	display: block;
+	background: #f8f8f8;
+	padding: 10px 20px;
+	border: none;
+	margin-bottom: 25px;
+	color: #666;
+	font-family: Courier, sans-serif;
+}
+code {
+	color: #045d44;
+    background-color: #f7f7f7;
+    /*
+	color: #c7254e;
+	background-color: #f9f2f4;*/
+	border-radius: 4px;
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+	padding: 2px 4px;
+	font-size: 90%;
+	text-align: left;
+}
+ p>code {
+	padding: 0 10px;
+	margin: 0 10px;
+	color: #fff;
+	background-color: #1f1f1f;
+	font-size: .95em;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+article figure {
+	margin: 1em 0;
+}
+article figcaption {
+	font-size: 0.75em;
+	padding: 0.5em 2em;
+	margin-bottom: 2em;
+}
+article figure img {
+	margin-bottom: 0px;
+}
+article hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #eee;
+}
+article ol p,article  ul p {
+	margin-bottom: 0px;
+}
+article li {
+	margin-bottom: 0.75em;
+	margin-top: 0.75em;
+}
+article ol#footnotes {
+	font-size: 0.95em;
+	padding-top: 1em;
+	margin-top: 1em;
+	margin-left: 0;
+	border-top: 1px solid #eaeaea;
+	counter-reset: footer-counter;
+	list-style: none;
+	color: #555;
+	padding-left: 5%;
+	margin: 20px 0;
+}
+article ol#footnotes li {
+	margin-bottom: 10px;
+	margin-left: 16px;
+	font-weight: 400;
+	line-height: 2;
+	list-style-type: none;
+}
+article ol#footnotes li:before {
+	content: counter(footer-counter) ". ";
+	counter-increment: footer-counter;
+	font-weight: 800;
+	font-size: .95em;
+}
+@keyframes highfade {
+	0% {
+		background-color: none;
+	}
+	20% {
+		background-color: yellow;
+	}
+	100% {
+		background-color: none;
+	}
+}
+@-webkit-keyframes highfade {
+	0% {
+		background-color: none;
+	}
+	20% {
+		background-color: yellow;
+	}
+	100% {
+		background-color: none;
+	}
+}
+article a:target,article  ol#footnotes article  li:target,article  sup a:target {
+	animation-name: highfade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: highfade;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in-out;
+}
+article a:target {
+	border: 0;
+	outline: 0;
+}
+animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in-out;
+}
+article a:target {
+	border: 0;
+	outline: 0;
+}
+tion-iteration-count: 1;
+-webkit-animation-timing-function: ease-in-out;
+}
+article a:target {
+	border: 0;
+	outline: 0;
+}
+/**********************/
+#tool{
+	display: block;
+	position: fixed;
+	left: 0;
+	top:  100px;
+	margin-left: 20px;
+	height:85%;width:15%;
+	box-shadow: 0 1px 8px rgba(0,0,0,.06);
+}
+#tool p{
+	margin: 20px 0;
+}
+#MilFun{
+	border: none;
+	outline:none;
+	resize:none;
+	left: 0;
+	top:  100px;
+	padding: 10px;
+	margin-bottom: 10px;
+	height:80%;width:90%;
+	box-shadow: 0 1px 8px rgba(0,0,0,.06);
+}
+	#result{
+		display:block;
+		float: right;
+		padding: 30px;
+		width: 80%;
+		text-align: left;
+		margin: 0 auto;
+		box-shadow: 0 1px 8px rgba(0,0,0,.06);
+	}

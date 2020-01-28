@@ -1,0 +1,87 @@
+{include file="/common/header" /}
+{load href="__CSS__sspai.css" /}
+<title>怪兽研习社 - MarkDown在线编辑器</title>
+
+{include file="/common/nav" /}	
+<!---->
+<div class="docker main">
+		<div class="inner">
+			
+			<div>
+					<!--保留块-->
+					<a href=""><div class="swiper s1"></div></a>
+					<!--文章顶部信息-->
+					<div class="article-head">
+						<p class="category">
+							<a id="article-type" href=""  contenteditable="true">创意越过界</a>
+						</p>
+						<h1 id="article-title" contenteditable="true">如何从“听到大师讲课”到“和大师合作”丨MindClass创意大师课正式上线</h1>
+						<p id="article-tag" class="article-tag" contenteditable="true">
+							<span class="tag">品牌</span>
+							<span class="tag">创意</span>
+							<span class="tag">灵感</span>
+							<span class="tag">品牌</span>
+							<span class="tag">创意</span>
+							<span class="tag">灵感</span>
+						</p>
+						<p class="" contenteditable="true">
+							<span id="article-imgurl" class="tag">https://pic2.zhimg.com/v2-0114703a5276a4824b7022ff94645425_1200x500.jpg</span>
+						</p>
+					</div>
+
+					<!--设置展示的div添加id-->
+				    
+				    	<article id="result">
+				    		
+
+				    	</article>
+				    
+
+				    <div id="tool">
+				    	<p>MilFun文章编辑器</p>
+				    	<!--设置id为oriContent，如果想实现实时更新，使用onkeyup方法-->
+				    	 <textarea id="MilFun" placeholder="请输入文章内容" onkeyup="convert()"></textarea>
+				    	  <a href="jacascript:;" class="link-more">提交信息</a>
+				    </div>
+				    
+				   
+
+			</div>
+
+		   
+		</div>
+		 
+
+		<!-- Tips -->
+
+		<!-- Tips End-->
+
+</div>
+{load href="__JS__milfun.js" /}
+<script>
+	var domain = "{:APP_DOMAIN}"
+	var jsList = ["showdown.min","commit"]
+	var mi = new Milfun(jsList,domain);
+	
+</script>
+<script>
+
+var html,text,onverter 
+function convert(){
+    text = $("#MilFun").val();
+    converter = new showdown.Converter();
+    html = converter.makeHtml(text);
+    $("#result").html(html) ;
+}
+
+
+$(window).load(function(){
+	
+	$(".link-more").click(function(){
+	    co.getAll(domain );
+	});
+});
+
+
+</script>
+

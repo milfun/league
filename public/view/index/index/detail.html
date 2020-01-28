@@ -1,0 +1,133 @@
+{include file="/common/header" /}
+{load href="__CSS__sspai.css" /}
+<title>米饭联盟-{$blog.aname}</title>
+{include file="/common/nav" /}	
+	<!---->
+	<div class="docker article">
+		<div class="inner">
+			
+			<!--保留块-->
+			<a href=""  title="怪兽研习社" ><div class="swiper s1"></div></a>
+			<!--文章顶部信息-->
+			<div class="article-head">
+				<div class="bread">
+					当前位置：<a href="{:APP_DOMAIN}">首页</a>
+					>><a href="{:urm('search',['item'=>$blog.item])}">{$blog.caterogy}</a> 
+					>> <a href="">{$blog.aname}</a> 
+
+					<span class="bread-time">{$blog.add_time|}</span>
+				</div>
+				
+				<h1>{$blog.aname}</h1>
+				<p class="category">
+					<a class="" href="" >{$blog.caterogy}</a>
+				</p>
+				<p class="article-tag">
+					<span class="tag">品牌</span>
+					<span class="tag">创意</span>
+					<span class="tag">灵感</span>
+					<span class="tag">品牌</span>
+					<span class="tag">创意</span>
+					<span class="tag">灵感</span>
+				</p>
+
+			</div>
+			<!--左部基本工具-->
+			<div class="article-tool">
+				&nbsp;
+				<div class="share-btn">
+					<span title="{$blog.likes}喜欢"><i class="sbtn sb-like"></i>{$blog.likes}</span>
+					<span title="{$blog.hot}人气"><i class="sb-favo sbtn"></i>{$blog.hot}</span>
+					<span title="{$blog.common}评论"><i class="sb-weibo sbtn"></i>{$blog.common}</span>
+					<span title="微信"><i class="sb-wechat sbtn"></i>微信</span>
+				</div>
+			</div>
+			<!--正文内容-->
+			
+			<div class="article-content">
+				<article>
+					{$blog.acontent}
+				</article>
+			</div>
+			<!--右部保留-->
+			<div class="article-else">&nbsp;
+				</div>
+			<!--清楚浮动-->
+			<div class="clear"></div>
+			<!--点赞按钮-->
+			<div class="docker list">
+				<div class="inner">
+					<div class="load-more zan">
+						<a href="" class=""><i class="sbtn sb-zan"></i></a>
+					</div>
+					
+				</div>
+			</div>
+			<!-- 作者信息 -->
+			<div class="article-info">
+				<img src="__IMG__logo.jpg"  alt="{$blog.author}" title="{$blog.author}">
+				<div class="article-auth">
+					<p class="auth-name">{$blog.author}<i class="vip-icon"></i></p>
+					<p class="auth-desc">福建 | 程序猿/最爱黑科技</p>
+				</div>
+				
+				<a href="" class="btn article-focus">关注</a>
+			</div>
+
+			<!--评论按钮 -->
+			<p class="more"><a href="" class="link-more discuss">登陆后评论</a></p>
+			
+			<!--版权声明 -->
+			<div class="article-copy">
+				<p>版权声明： 本文系原文作者授权MilFun发布，如需转载请联系原文作者，并保留文章在MilFun（www.milfun.fun）的完整链接，谢谢！</p>
+			</div>
+
+
+
+			<!--底部推荐列表-->
+			<div class="docker list">
+				<div class="inner">
+					<div class="">
+						<h2>MilFun Pick 编辑推荐</h2>
+						<div class="clear"></div>
+						<ul class="">
+							{volist name="comblog" id="co"}
+								<li class="card" >
+									<a href="{:urm('blog',['aid'=>$co.aid])}" url=""><img class="card-img" src="{$co.imgurl}"  alt="{$co.aname}"  title="{$co.aname}"></a>
+									<a href=""><h3 class="card-tit">{$co.aname}</h3></a>
+									<!---->
+									<p class="card-tag">
+										<span class="tag">{$co.tag}</span>
+									</p>
+									<p class="card-data"><span>{$co.common}</span>
+										<span>{$co.hot}</span>
+										<span>{$co.likes}</span></p>
+									<div class="bot-line"></div>
+									<p class="card-auth">
+										<img src="__IMG__logo.jpg"  alt="{$co.aname}"  title="{$co.aname}"> 
+										<div class="card-info">
+											<span>{$co.author}</span>
+											<span class="card-time">1 小时前</span>
+										</div>
+									</p>
+								</li>
+							{/volist}
+								
+								
+
+							</ul>
+					</div>
+					<p class="more"><a href="" class="link-more">更多活动</a></p>
+				</div></div>
+
+	</div>
+
+	
+{include file="/common/copy" /}	
+{load href="__JS__milfun.js" /}
+<script>
+	var domain = "{:APP_DOMAIN}"
+	var jsList = ["detail"]
+	var mi = new Milfun(jsList,domain);
+</script>
+{include file="/common/footer" /}

@@ -1,0 +1,128 @@
+{include file="/common/header" /}
+<title>怪兽研习社-最适合你的知识分享博客</title>
+{include file="/common/nav" /}	
+
+	<!---->
+	<div class="docker main">
+		<div class="inner">
+
+			<div class="content">
+				<!---->
+
+				<a href=""  title="怪兽研习社" ><div class="swiper s1"></div></a>
+				
+				<!---->
+				<h2>Featured Hot 精彩热门</h2>
+				<ul class="">
+					{volist name="hot_blog" id="bo"}
+						<li class="card" >
+							<a href="{:urm('blog',['aid'=>$bo.aid])}" url=""><img class="card-img" src="{$bo.imgurl}"  alt="{$bo.aname}"  title="{$bo.aname}"></a>
+							<a href=""><h3 class="card-tit">{$bo.aname}</h3></a>
+							<!---->
+							<p class="card-tag">
+								<span class="tag">{$bo.tag}</span>
+							</p>
+							<p class="card-data"><span title="{$bo.common}评论">{$bo.common}</span>
+								<span title="{$bo.hot}人气">{$bo.hot}</span>
+								<span title="{$bo.likes}喜欢">{$bo.likes}</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="__IMG__logo.jpg" alt="{$bo.aname}" title="{$bo.aname}"> 
+								<div class="card-info">
+									<span>MilFun</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+					{/volist}
+					</ul>
+					<!--
+				<div class="left-bar">
+				</div>
+				
+				<div class="right-bar">
+					<div class="box reg">
+						<h3>大风帆股份但是</h3>
+						<div class="box-cont">
+							<span>快来测试一下吧</span>
+							<img src="__IMG__five-graph.png">
+							<span>快来测试一下吧</span>
+						</div>
+					</div>
+				</div>-->
+
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<!---->
+	<div class="docker list">
+		<div class="inner">
+			<div class="pick-list">
+				<h2>Editor's Pick 编辑推荐</h2>
+				<ul class="">
+					{volist name="sug_blog" id="su"}
+						<li class="card">
+							<a href="{:urm('blog',['aid'=>$su.aid])}"><img class="card-img" src="{$su.imgurl}"  alt="{$su.aname}" title="{$su.aname}"></a>
+							<a href=""><h3 class="card-tit">{$su.aname}</h3></a>
+							<p class="card-tag">
+								<span class="tag">品牌</span>
+								<span class="tag">创意</span>
+								<span class="tag">灵感</span>
+							</p>
+							<p class="card-data"><span  title="{$su.common}评论">{$su.common}</span>
+								<span  title="{$su.hot}人气">{$su.hot}</span>
+								<span title="{$su.likes}喜欢">{$su.likes}</span></p>
+							<div class="bot-line"></div>
+							<p class="card-auth">
+								<img src="__IMG__logo.jpg"  alt="{$su.aname}" title="{$su.aname}"> 
+								<div class="card-info">
+									<span>{$su.author}</span>
+									<span class="card-time">1 小时前</span>
+								</div>
+							</p>
+						</li>
+					{/volist}
+					</ul>
+			</div>
+			<p class="more"><a href="" class="link-more">更多精彩</a></p>
+		</div>
+		
+		<!--广告-->
+		<div class="docker">
+			<div class="inner">
+				<!--保留块-->
+				<a href=""  title="怪兽研习社" ><div class="swiper s2"></div></a>
+			</div>
+		</div>
+		<!--广告 END -->
+
+	</div>
+
+
+	<!--
+	<div class="docker list">
+		<div class="inner">
+			<div class="load-more">
+
+				<a href="">浏览更多</a>
+			</div>
+			
+		</div>
+	</div>-->
+
+	<!---->
+	
+
+{include file="/common/copy" /}	
+
+<script>
+	$(".sb-phone").hover(function(){
+    $(".code").css("display","block");
+},function(){
+    $(".code").css("display","none");
+});
+</script>
+{include file="/common/footer" /}
